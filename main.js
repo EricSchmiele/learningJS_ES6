@@ -1,38 +1,13 @@
-class List {
-    constructor() {
-        this.data = [];
-    }
+function teste(x) {
+    const ususario = 'Eric';
 
-    add(data) {
-        this.data.push(data);
-        console.log(this.data);
-    }
-}
+    let y = 2;
 
-class TodoList extends List {
-    constructor() {
-        super();
+    if(x>5) {
+        let y = 4;
 
-        this.usuario = 'Eric';
-    }
-
-    mostraUsuario() {
-        console.log(this.usuario);
+        console.log(x, y, a);
     }
 }
 
-class Matematica {
-    static soma(a, b) {
-        return a + b;
-    }
-}
-
-var MinhaLista = new TodoList();
-
-document.getElementById('novotodo').onclick = function() {
-    MinhaLista.add('Novo todo');
-}
-
-MinhaLista.mostraUsuario();
-
-console.log(Matematica.soma(1, 2));
+teste(10);
